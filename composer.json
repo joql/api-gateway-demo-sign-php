@@ -1,5 +1,5 @@
 {
-    "name": "apigatewaysign",
+    "name": "joql/apigatewaysign",
     "description": "api-gateway-sign",
     "license": "MIT",
     "keywords": ["api gateway sign"],
