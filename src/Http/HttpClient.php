@@ -18,49 +18,18 @@
  * under the License.
  */
 
-
 /**
- * 集合对象的元素处理
- */
-class DictionaryUtil 
+*httpClient����
+*/
+namespace ApiGatewaySign\Http;
+
+class HttpClient
 {
-	public static function Add($dic, $key, $value) {
-		if (null == $value) {
-			return;
-		}
-		if (null == $dic)
-		{
-			$dic = Array();
-		}
-		foreach($dic as $itemKey=>$itemValue)
-		{
-			//区分大小写
-			if ($itemKey == $key) {
-				$dic[$key] = $itemValue;
-				return;
-			}
-		}
-		$dic[$key] = $value;
-
-	}
-
-	public static function Get($dic, $key)
+	private static $connectTimeout = 30000;//30 second
+	private static $readTimeout	= 80000;//80 second
+	
+	public static function execute($request)
 	{
-		if (array_key_exists($key, $dic)) {
-			return $dic[$key];
-		}
-
-		return null;
-	}
-
-	public static function Pop(&$dic, $key)
-	{
-		$value = null;
-		if (array_key_exists($key, $dic)) {
-			$value = $dic[$key];
-			unset($dic[$key]);
-		}
-
-		return $value;
+		return HttpUtil::send($request, self::$readTimeout, self::$connectTimeout);
 	}
 }

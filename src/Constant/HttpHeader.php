@@ -17,26 +17,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
+namespace ApiGatewaySign\Constant;
 /**
- * Í¨ÓÃ³£Á¿
+ * HTTPå¤´å¸¸é‡
  */
-class Constants
-{
-	//Ç©ÃûËã·¨HmacSha256
-    const HMAC_SHA256 = "HmacSHA256";
-    //±àÂëUTF-8
-    const ENCODING = "UTF-8";
-    //UserAgent
-    const USER_AGENT = "demo/aliyun/java";
-    //»»ĞĞ·û
-    const LF = "\n";
-	//·Ö¸ô·û1
-    const SPE1 = ",";
-    //·Ö¸ô·û2
-    const SPE2 = ":";
-    //Ä¬ÈÏÇëÇó³¬Ê±Ê±¼ä,µ¥Î»ºÁÃë
-    const DEFAULT_TIMEOUT = 1000;
-    //²ÎÓëÇ©ÃûµÄÏµÍ³HeaderÇ°×º,Ö»ÓĞÖ¸¶¨Ç°×ºµÄHeader²Å»á²ÎÓëµ½Ç©ÃûÖĞ
-	const CA_HEADER_TO_SIGN_PREFIX_SYSTEM = "X-Ca-";
+class HttpHeader {
+    //è¯·æ±‚Header Accept
+    const HTTP_HEADER_ACCEPT = "Accept";
+    //è¯·æ±‚Bodyå†…å®¹MD5 Header
+    const HTTP_HEADER_CONTENT_MD5 = "Content-MD5";
+    //è¯·æ±‚Header Content-Type
+    const HTTP_HEADER_CONTENT_TYPE = "Content-Type";
+    //è¯·æ±‚Header UserAgent
+    const HTTP_HEADER_USER_AGENT = "User-Agent";
+    //è¯·æ±‚Header Date
+    const HTTP_HEADER_DATE = "Date";
 }

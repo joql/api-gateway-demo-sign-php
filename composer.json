@@ -1,5 +1,5 @@
 {
-    "name": "joql/api-gateway-sign",
+    "name": "apigatewaysign",
     "description": "api-gateway-sign",
     "license": "MIT",
     "keywords": ["api gateway sign"],
@@ -12,10 +12,9 @@
     "require": {
         "php": ">=5.5.0"
     },
- 
     "autoload": {
-        "psr-0": {
-            "\\": "src/"
+        "psr-4": {
+            "ApiGatewaySign\\": "src/"
         }
     }
 }
