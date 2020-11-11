@@ -3,7 +3,7 @@
     "description": "api-gateway-sign",
     "license": "MIT",
     "keywords": ["api gateway sign"],
-    "version": "1.0.0",
+    "version": "v1.1",
     "authors": [
         {
             "name": "joql"
