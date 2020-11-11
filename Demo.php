@@ -17,7 +17,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-include_once 'Util/Autoloader.php';
+require_once 'vendor/autoload.php';
+
+use ApiGatewaySign\Http\HttpRequest;
+use ApiGatewaySign\Http\HttpClient;
+use ApiGatewaySign\Constant\HttpHeader;
+use ApiGatewaySign\Constant\SystemHeader;
+use ApiGatewaySign\Constant\ContentType;
+use ApiGatewaySign\Constant\HttpMethod;
+
+
 
 $demo = new Demo();
 $demo->doGet();
