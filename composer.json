@@ -3,12 +3,6 @@
     "description": "api-gateway-sign",
     "license": "MIT",
     "keywords": ["api gateway sign"],
-    "version": "v1.1",
-    "authors": [
-        {
-            "name": "joql"
-        }
-    ],
     "require": {
         "php": ">=5.5.0"
     },
