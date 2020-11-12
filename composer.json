@@ -3,6 +3,7 @@
     "description": "api-gateway-sign",
     "license": "MIT",
     "keywords": ["api gateway sign"],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.0"
     },
