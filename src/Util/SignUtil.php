@@ -22,10 +22,6 @@ namespace ApiGatewaySign\Util;
 use ApiGatewaySign\Constant\Constants;
 use ApiGatewaySign\Constant\HttpHeader;
 use ApiGatewaySign\Constant\SystemHeader;
-use ApiGatewaySign\Constant\ContentType;
-use ApiGatewaySign\Constant\HttpMethod;
-use ApiGatewaySign\Constant\HttpSchema;
-
 /**
 *签名处理
 */

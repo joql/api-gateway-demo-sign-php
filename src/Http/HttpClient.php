@@ -23,6 +23,8 @@
 */
 namespace ApiGatewaySign\Http;
 
+use ApiGatewaySign\Util\HttpUtil;
+
 class HttpClient
 {
 	private static $connectTimeout = 30000;//30 second

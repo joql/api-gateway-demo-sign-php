@@ -1,2 +1,1 @@
-# api-gateway-demo-sign-php
-aliyun api gateway request signature demo by php
+具体使用看demo
