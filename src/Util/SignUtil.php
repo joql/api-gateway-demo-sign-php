@@ -131,7 +131,7 @@ class SignUtil
 	{
 		$sb = "";
 
-		if (null != $signHeaderPrefixList)
+		if (null !== $signHeaderPrefixList)
 		{
 			//剔除X-Ca-Signature/X-Ca-Signature-Headers/Accept/Content-MD5/Content-Type/Date
             unset($signHeaderPrefixList[SystemHeader::X_CA_SIGNATURE]);
@@ -148,7 +148,7 @@ class SignUtil
 				{
 					if (self::IsHeaderToSign($itemKey, $signHeaderPrefixList))
                     {
-						$sb.=$itemKey;
+						$sb.=strtolower($itemKey);
 						$sb.=Constants::SPE2;
                         if (0 < strlen($itemValue)) {
 							$sb.=$itemValue;
